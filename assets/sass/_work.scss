@@ -1,0 +1,197 @@
+
+// start of work page
+
+.work-row{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap; 
+	width:100%;
+	margin:0 auto;
+	align-items: center;
+	justify-content:center;
+	.work-box{
+		
+		width: calc(19% - 2px);
+		// height: 210px;
+		height:29vh;
+		// height: calc(29vh - 125px);
+		position:relative;		
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-top: 4%;
+		margin:2px;
+		.work-content{
+			display:block;	
+			padding-top:41%;
+
+			hr {
+			   	
+			    margin: 1em auto;
+			    border: 1px solid #f48600;
+			    width: 20%;
+			    position:relative;
+			    transition: all .5s;
+			}
+			h4{
+				color:  #ffffff;
+				text-transform: uppercase;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+				text-align: center;
+				position:relative;
+				width:70%;
+				margin:0 auto;
+				transition: all .5s;
+			}
+		}
+		.work-filter{
+			background:  rgba(57, 53, 49, 0.8);
+			position:absolute;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+			opacity :0;
+			z-index:999;
+			transition: all 0.5s ease;
+		}
+	
+	}
+}
+
+.work-row .work-box .work-filter:hover{
+	opacity:1;
+	.work-content{
+		display:block;
+	}
+}
+
+.work1{
+	background-image: url(../images/work-alvarado.jpg);
+}
+.work2{
+	background-image: url(../images/work-arroyooaks.jpg);
+}
+.work3{
+	background-image: url(../images/work-ashcroft.jpg);
+}
+.work4{
+	background-image: url(../images/work-benroe.jpg);
+}
+.work5{
+	background-image: url(../images/work-cambridge.jpg);
+}
+.work6{
+	background-image: url(../images/work-coronet.jpg);
+}
+.work7{
+	background-image: url(../images/work-fremont.jpg);
+}
+.work8{
+	background-image: url(../images/work-heritage.jpg);
+}
+.work9{
+	background-image: url(../images/work-kensington.jpg);
+}
+.work10{
+	background-image: url(../images/work-mcbain.jpg);
+}
+.work11{
+	background-image: url(../images/work-moody.jpg);
+}
+.work12{
+	background-image: url(../images/work-patlen.jpg);
+}
+.work13{
+	background-image: url(../images/work-prospect.jpg);
+}
+.work14{
+	background-image: url(../images/work-sanddollarbeachhouse.jpg);
+}
+.work15{
+	background-image: url(../images/work-teng-thumbnail.jpg);
+}
+.work16{
+	background-image: url(../images/work-Kasarabada-thumbnail.jpg);
+}
+
+// Responsive design
+@media all and (max-width: 1500px) { 
+	.work-row .work-box {
+	    height: 26vh;
+	}
+	.work-row .work-box .work-content {
+	    padding-top: 22%;
+	}
+}
+
+@media all and (max-width: 1390px) { 
+	.work-row .work-box .work-content {
+	    padding-top: 13%;
+	}
+}
+@media all and (max-width: 1300px) { 
+	.work-row .work-box {
+	    height: 25vh;
+	}
+}
+@media all and (max-width: 1100px) { 
+	.work .main-container {
+    	margin: 80px 0 50px 0;
+	}
+	.work-row .work-box {
+	    height: 200px;
+	}
+}
+@media all and (max-width: 1025px) { 
+	.work-row .work-box {
+	    width: calc(25% - 2px);
+	}
+	.work-row .work-box .work-content {
+	    padding-top: 22%;
+	}
+}
+
+@media all and (max-width: 768px) {
+	
+
+	.work-row .work-box {
+    	width: 235px;
+	}
+	
+}
+@media all and (max-width: 736px) {
+	.work .main-container {
+	    margin: 45px 0;
+	}
+}
+@media all and (max-width: 667px) {
+	.work-row .work-box {
+    	width: calc(49% - 2px);
+    	height: 200px;
+	}
+	.work-row {
+	    flex-direction: row;
+	    justify-content: inherit;
+	}
+	.work .main-container {
+	    margin: 45px 0;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.work-row .work-box {
+    	height: 160px;
+	}
+	.work-row .work-box .work-content {
+	    padding-top: 12%;
+	}
+}
+
+@media all and (max-width: 320px) {
+	
+    
+}
+
+

@@ -1,0 +1,140 @@
+
+// Contact Page
+
+.contact{
+	.main-container{
+	    margin:80px 114px 50px;
+	}
+}
+// content container
+.contact-container{
+	display:flex;
+	width:100%;
+	justify-content: space-between; 
+	margin:0 auto;
+	// contact item
+	.contact-item{
+		width: calc(50% - 20px);
+		// map image
+		.map{
+			width:100%;
+			height:auto;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height:485px;
+			width:100%;
+		}
+		.map1{
+			background-image: url("../images/map1.jpg");
+		}
+		.map2{
+			background-image: url("../images/map2.jpg");
+		}
+		// contact info
+		.contact-content{
+			padding: 3% 0 0;
+			h4{
+				font-family:"quicksand-bold", sans-serif;
+				color:  #59524b;
+				font-size: 0.875rem;
+				font-weight: 700;
+				line-height: 1.714;
+				text-align: left;
+				margin:0;
+			}
+			.fa{
+				margin-right:10px;
+			}
+			p{
+				line-height: 1.714;
+			}
+			.email{
+				color:#f48600; 
+			}
+			.padding{
+				padding-left:24px;
+			}
+			a{
+				color:  #59524b;
+				font-size: 0.875rem;
+				font-weight: 400;
+				line-height: 1.714;
+				text-align: left;
+			}
+		}
+	}
+}
+
+// Responsive design
+
+
+@media all and (max-width: 1390px) {.contact-container .contact-item .map {
+	    height: 300px;
+	}
+
+}
+
+
+@media all and (max-width: 1024px) { 
+	.contact .main-container {
+	    margin: 100px 0;
+	    padding:0 5%;
+	}
+	.contact-container .contact-item .map {
+	    height: 350px;
+	}
+}
+
+@media all and (max-width: 768px) {
+
+	.contact-container {
+	    padding-bottom:0;
+	}
+	.contact-container .contact-item .map {
+	    height: 250px;
+	}
+
+	.contact-container .contact-item .contact-content {
+	    padding-left: 15px;
+	}
+
+	.contact .main-container {
+		padding:0;
+	    width: 100%;
+	    height: 100%;
+	}
+	.contact-container .contact-item {
+	    width: calc(50% - 10px);
+	}
+	.contact .main-container {
+	    margin: 45px 0;
+	}
+}
+
+
+
+@media all and (max-width: 480px) {
+	.contact-container {
+	    flex-direction: column;
+	}
+	.map1, .map2 {
+	    height: 350px;
+	}
+	.contact-container .contact-item {
+	    width: 100%;
+	    margin: 0;
+	}
+	.contact-container .contact-item .contact-content {
+	    padding-left: 15px;
+	    padding: 10px 0 10px 15px;
+	}
+	.contact-container .contact-item {
+	    padding-bottom: 0;
+	}
+	
+}
+
+@media all and (max-width: 320px) {
+	
+}
+

@@ -1,0 +1,151 @@
+// Home Page
+
+.home{
+	.main-container{
+	    margin: 80px 114px 50px;
+
+	}
+
+	.main-container{	
+		.gallery-cell{
+			width:100%;
+			background-size:cover;
+			background-repeat: no-repeat;
+			height:calc(100vh - 130px);
+			background-position: center center; 
+
+		}	
+		.home1{
+			background-image: url("../images/home-fremont.jpg");
+			
+		}
+		.home2{
+			background-image: url("../images/home-moody.jpg");
+
+		}
+		.home3{
+			background-image: url("../images/home-arroyooaks.jpg");
+
+		}
+		.home4{
+			background-image: url("../images/home-alvarado.jpg");
+
+		}
+		.home5{
+			background-image: url("../images/home-cambridge.jpg");
+
+		}
+	}
+
+	button{
+		display:block;
+	}
+	.flickity-page-dots{
+		display:none;
+	}
+	.flickity-prev-next-button{
+		background: rgba(232, 232, 232, 0.5);
+		width: 50px;
+		height: 50px;
+	}
+	.flickity-prev-next-button .arrow {
+	    fill: #fff;
+	}
+	
+}
+.mobile-sentence{
+	display:none;
+}
+
+// Responsive design
+
+@media all and (max-width: 1024px) { 
+	.home .main-container{
+	    margin: 80px 0px 50px;
+
+	}
+	.home .main-container .gallery-cell {
+	    height: 450px
+	}
+	.home .carousel {
+		height: 450px;
+	}
+
+}
+
+@media all and (max-width: 768px) {
+
+	
+	.home .main-container .gallery-cell {
+	    height: 550px
+	}
+	.home .carousel {
+		height: 550px;
+	}
+}
+
+@media (max-width: 1024px)  and (max-height: 768px) {
+	.home .main-container .gallery-cell {
+		min-height: 350px;
+	}
+	.home .carousel {
+	    min-height: 350px;
+	}
+}
+@media (max-width: 768px)  and (max-height: 1024px) {
+	.home .carousel{
+		min-height: 350px;
+	}
+	.home .main-container .gallery-cell  {
+	    min-height: 350px;
+	}
+}
+
+@media all and (max-width: 736px) {
+	.home .main-container {
+	    margin: 45px 0;
+	}
+}
+
+
+@media all and (max-width: 667px) {
+	.home .main-container .gallery-cell {
+	    min-height: initial;
+	}
+	.home .carousel {
+		min-height: initial;
+	}
+}
+
+@media all and (max-width: 736px) {
+	.home .main-container .gallery-cell {
+	    height:210px;
+	}
+	.home .carousel {
+    	height: 210px;
+	}
+}
+
+@media all and (max-width: 667px) {
+	.home .main-container {
+	    margin: 45px 0;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.home .main-container .gallery-cell {
+    	height: 500px;
+
+	}
+
+	.home .flickity-prev-next-button {
+	    position: absolute;
+	    top: 116%;
+	}
+}
+
+@media all and (max-width: 320px) {
+
+    
+}
+

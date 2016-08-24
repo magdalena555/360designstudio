@@ -1,0 +1,144 @@
+// header
+header{
+	width:100%;
+	top:0;
+	position: fixed;	
+	background: white;
+	z-index: 1010;
+	.header-wrapper{
+		height: 80px;
+		padding: 0 8%;
+		width:100%;
+		display: flex;
+		justify-content:space-between;
+		// logo
+		.logo{
+		display: flex;
+		align-items: center;
+		width:216px;
+		a{
+			width:90%;
+			img{
+				width:100%;
+			}
+		}
+			
+		}
+	}
+}
+
+.menu-container{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	// hide hambuger menu
+	.mobileNavIcon {
+	    display: none;
+	    i{
+			color:#f48600; 
+	    }
+	}
+	// right navigation
+	#menu-nav{
+		display: flex;
+		align-items: center;
+		// desktop navigation
+		.desktop-nav{
+			.fa{
+				display: none;
+			}
+			ul{
+			display: flex;
+			flex-direction:row;
+			list-style: none;
+			margin: 0 auto;
+			padding:0;
+				li{
+				padding:  0 10px;
+				} 
+				li:before {
+				    content: "•"; 
+				    padding-right: 10px;
+				    color:#f48600; 
+				}
+			}
+			
+
+		} 
+		// mobile navigation
+		.mobile-nav{
+			display: none;
+			position: absolute;
+			top: 75px;
+			left: 0px;
+			right: 0px;
+			background-color:  #f1f1f1;
+			padding:25px 0;
+			ul{
+			padding:0;
+			list-style: none;
+			margin:0;
+				li{
+					padding:5px 0;
+					text-align: center;
+				}
+			}
+			
+		}
+	}
+}
+
+.menu-container .mobileNavIcon i{
+	font-size:21px;
+}
+// Responsive design
+@media all and (max-width: 1350px) { 
+	header .header-wrapper {
+	    padding: 0 15%;
+
+	}
+}
+@media all and (max-width: 1024px) { 
+	header .header-wrapper {
+	    padding: 0 5%;
+	}
+}
+
+
+@media all and (max-width: 768px) {
+	header .header-wrapper {
+	    padding: 0 5%;
+	}	
+}
+
+@media all and (max-width: 736px) {
+	
+	// shows the hamburger menu
+	.menu-container .mobileNavIcon {
+	    display: block;
+
+	}
+	// hides the desktop menu
+	header .header-wrapper #menu-nav .desktop-nav{
+		display: none;
+	}
+	// hides the mobile menu until clicked on
+	header .header-wrapper #menu-nav .mobile-nav{
+		display: none;
+	}
+	// changes width of the logo
+	header .header-wrapper .logo a{
+	    width: 100px;
+	}
+	header .header-wrapper {
+	    padding: 0 5%;
+	    height: 45px;
+	}	
+
+	.menu-container #menu-nav .mobile-nav {
+	    top: 45px;
+	}
+}
+
+
+

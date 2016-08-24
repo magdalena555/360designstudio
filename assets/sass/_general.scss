@@ -1,0 +1,109 @@
+
+// body-wrapper for every page
+.body-wrapper{
+    max-width: 1600px;
+    margin:0 auto ;
+    display: block;
+
+}
+// main container for every page
+
+.main-container{
+    margin: 80px 114px 50px;
+
+}
+
+
+h1, h2, h3, h4, h5, p, a{
+    font-family: "quicksand-regular", sans-serif;
+    color:  #59524b;
+    text-align: left;
+}
+// studio title
+h1{
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 0.8;
+    text-transform: uppercase;
+    margin:0;
+}
+// studio subtitle
+h2{
+    
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    margin:0;
+
+}
+p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.571;
+    margin:0;
+}
+
+a{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+}
+a i{
+    padding:0 15px;
+    color:#59524b;
+    font-size: 21px;
+}
+
+
+// hover states
+.menu-container #menu-nav a:hover{
+    color:#f48600; 
+}
+
+.studio-subnav a:hover{
+    color:#f48600; 
+}
+
+.social-wrapper .fa:hover{
+    color:#f48600; 
+}
+
+.menu-container .mobileNavIcon{
+    color:#f48600; 
+}
+.arrows ul li a:hover{
+    color:#f48600;    
+}
+// Responsive design
+@media all and (max-width: 1390px) { 
+
+}
+@media all and (max-width: 1024px) { 
+
+}
+@media all and (max-width: 940px) { 
+
+
+}
+
+@media all and (max-width: 768px) {
+
+}
+
+@media all and (max-width: 667px) {
+
+   
+
+}
+
+@media all and (max-width: 480px) {
+
+}
+
+@media all and (max-width: 320px) {
+    
+    
+}
+
